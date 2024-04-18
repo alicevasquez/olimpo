@@ -10,6 +10,7 @@ body {
 h1{
     color:#3a4281;
     text-transform: uppercase;
+    font-weight: 700;
 }
 .bloque{
 
@@ -42,7 +43,19 @@ a {
 }
 .video{
     margin-top: 25px;
+    text-align: center;
 }
-.carrusel{
-    
+.align{
+    text-align: center;
+}
+.w3-button{
+    border-style: solid;
+    border-radius: 15px;
+}
+.w3-content {
+    max-width: 100%;
+}
+.bienvenida{
+    background-color: #d8d8d8;
+    padding: 0px;
 }

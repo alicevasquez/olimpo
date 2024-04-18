@@ -4,7 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="./assets/style.css">
+    <style>
+        .mySlides {
+            display: none;
+        }
+    </style>
 </head>
 <title>Colegio Instituto Olimpo Ramón</title>
 
@@ -32,6 +38,46 @@
         </div>
     </div>
     <hr />
+<h1 class="align bienvenida">Bienvenidos al sitio web del colegio olimpo Ramón!</h1>
+    <div class="carrusel">
+        <div class="w3-content w3-display-container">
+            <img class="mySlides" src=".\assets\carrusel\inicio\1.png" style="width:100%">
+            <img class="mySlides" src=".\assets\carrusel\inicio\2.png" style="width:100%">
+            <img class="mySlides" src=".\assets\carrusel\inicio\3.png" style="width:100%">
+            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                if (n > x.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = x.length }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex - 1].style.display = "block";
+            }
+        </script>
+    </div>
+    <h1 class="align">
+        Eventos
+    </h1>
+    <div class="video">
+        <!-- Aquí está el video introductorio -->
+        <iframe width="900px" height="400px" src="https://www.youtube.com/embed/mhzzc0tyS5E"
+            title="Colegio Instituto Olimpo Ramon (CIOR)" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
 
 </body>
 
