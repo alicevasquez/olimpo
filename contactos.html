@@ -4,9 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="./assets/style.css">
+    <style>
+        .mySlides {
+            display: none;
+        }
+    </style>
 </head>
-<title>Colegio Instituto Olimpo Ramón</title>
+<title>Contacto | Colegio Instituto Olimpo Ramón</title>
 
 <body>
     <div class="menu-principal">
@@ -32,6 +38,53 @@
         </div>
     </div>
     <hr />
+    <h1 class="align bienvenida">Contáctanos</h1>
+    <ul>
+        <li><strong>Dirección:</strong> Calle Zeus Norte 111, Urb. Olimpo, Santo Domingo, Dominican Republic 10905</li>
+        <li><strong>Teléfono:</strong> 809-560-1055 | 809-560-4641</li>
+        <li><strong>Email:</strong> colegioolimpo@gmail.com</li>
+    </ul>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15136.298990869625!2d-69.9843297!3d18.4802731!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf8a7206961a17%3A0xbd3e75b73b80a70d!2sColegio%20Instituto%20Olimpo!5e0!3m2!1ses-419!2sdo!4v1713483466968!5m2!1ses-419!2sdo"
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+    </script>
+    </div>
+    <h1 class="align">
+        <form>
+            <label for="nombre">Nombre </label><br />
+            <input type="text" name="nombre">
+            <br>
+
+            <label for="lastname">Apellido </label><br />
+            <input type="text" name="lastname">
+            <br>
+
+            <label for="email">Email </label><br />
+            <input type="email" name="email">
+            <br>
+            <input type="submit" class="boton" value="ENVIAR">
+        </form>
+    </h1>
+
 
 </body>
 

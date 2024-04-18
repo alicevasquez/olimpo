@@ -59,3 +59,9 @@ a {
     background-color: #d8d8d8;
     padding: 0px;
 }
+.underline{
+    text-decoration: underline;
+}
+.boton{
+    margin-top: 10px;
+}
